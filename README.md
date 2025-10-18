@@ -159,6 +159,7 @@ sns.violinplot(x='tip',y='day',data=tip,palette='rainbow')
 
 ```
 sns.kdeplot(data=tips,x="total_bill",hue="time",multiple="layer",linewidth=3,palette='Set2',alpha=0.8)
+
 ```
 
 <img width="1024" height="582" alt="image" src="https://github.com/user-attachments/assets/5d6b3c56-3328-4143-8f90-8d72852f5159" />
@@ -171,6 +172,7 @@ sns.kdeplot(data=tips,x="total_bill",hue="time",multiple="stack",linewidth=3,pal
 
 ```
 sns.kdeplot(data=tips,x="total_bill",hue="time",multiple="fill",linewidth=3,palette='Set1',alpha=0.8)
+
 ```
 
 <img width="1007" height="590" alt="image" src="https://github.com/user-attachments/assets/2c61ec5c-6653-4642-9b06-3c0b22c1c798" />
@@ -181,12 +183,14 @@ tip=sns.load_dataset('tips')
 num=tips.select_dtypes(include=['float64','int64']).columns
 corr=tips[num].corr()
 sns.heatmap(corr,annot=True,cmap="YlGnBu")
+
 ```
 
 <img width="779" height="560" alt="image" src="https://github.com/user-attachments/assets/23c149c9-503a-44ed-9f58-0e736ef8223f" />
 
 ```
 sns.heatmap(corr,cmap="YlGnBu")
+
 ```
 
 <img width="798" height="563" alt="image" src="https://github.com/user-attachments/assets/63e58eb3-fd03-48b5-b6d9-6f7e41e633b4" />
